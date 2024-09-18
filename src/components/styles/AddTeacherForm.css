@@ -1,0 +1,70 @@
+/* AddTeacherForm.css */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  p.error {
+    color: red;
+  }
+  
+  p.success {
+    color: green;
+  }
+  
