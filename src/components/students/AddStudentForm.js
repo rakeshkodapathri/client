@@ -13,7 +13,7 @@ function AddStudentForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/students/add', {
+      const response = await axios.post('http://localhost:5010/students/add', {
         name,
         grade,
         profile,

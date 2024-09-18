@@ -22,7 +22,7 @@ function AddTeacherForm() {
         setSuccessMessage('');  // Clear any existing success messages
 
         try {
-            const response = await axios.post('http://localhost:5000/teachers/add', {
+            const response = await axios.post('http://localhost:5010/teachers/add', {
                 name,
                 stream,
                 gender,

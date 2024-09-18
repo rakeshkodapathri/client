@@ -15,14 +15,14 @@ function Register() {
 
     try {
       // Check if the name exists in the database
-      const response = await axios.post('http://localhost:5000/auth/check-name', { name, userType });
+      const response = await axios.post('http://localhost:5010/auth/check-name', { name, userType });
       if (!response.data.exists) {
         setError(`The ${userType} with the name "${name}" does not exist.`);
         return;
       }
 
       // Proceed with registration
-      await axios.post('http://localhost:5000/auth/register', { name, email, password, userType });
+      await axios.post('http://localhost:5010/auth/register', { name, email, password, userType });
       navigate('/login'); // Redirect to the homepage
     } catch (err) {
       setError(err.response?.data?.error || 'Registration failed');

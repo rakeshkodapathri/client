@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', { email, password });
+      const response = await axios.post('http://localhost:5010/auth/login', { email, password });
       
       // Assuming token is received and saved in localStorage
       localStorage.setItem('token', response.data.token);

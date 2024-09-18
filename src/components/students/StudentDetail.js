@@ -11,7 +11,7 @@ function StudentDetail() {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/students/${id}`);
+        const response = await axios.get(`http://localhost:5010/students/${id}`);
         setStudent(response.data);
       } catch (err) {
         setError(err.response?.data?.error || 'Error fetching student details');
@@ -27,7 +27,7 @@ function StudentDetail() {
 
   const submitGrade = async (id, grade) => {
     try {
-      await axios.post(`http://localhost:5000/students/${id}/grade`, { grade });
+      await axios.post(`http://localhost:5010/students/${id}/grade`, { grade });
       setError('');
     } catch (err) {
       setError(error || 'Error updating grade');

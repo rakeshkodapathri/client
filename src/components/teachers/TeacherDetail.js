@@ -11,7 +11,7 @@ function TeacherDetail() {
   useEffect(() => {
     const fetchTeacher = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/teachers/${id}`);
+        const response = await axios.get(`http://localhost:5010/teachers/${id}`);
         setTeacher(response.data);
       } catch (err) {
         setError(err.response?.data?.error || 'Error fetching teacher details');
